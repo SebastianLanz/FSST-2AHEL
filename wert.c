@@ -2,22 +2,26 @@
 
 int main(void)
 {
+    int a = 1;
     int raten;
     int ZAHL = 33;
-    printf("Errate meine Zahl: ");
-    scanf("%d", &raten);
-    if (raten == ZAHL)
+    while (a == 1)
     {
-        printf("Du hast meine Zahl erraten");
+        printf("Errate meine Zahl: ");
+        scanf("%d", &raten);
+        if (raten == ZAHL)
+        {
+            printf("Du hast meine Zahl erraten\n");
+            a = 0;
+        }
+        if (raten < ZAHL)
+        {
+            printf("Zu klein\n");
+        }
+        if (raten > ZAHL)
+        {
+            printf("Zu gross\n");
+        }
     }
-    if (raten < ZAHL)
-    {
-        printf("Zu klein");
-    }
-    if (raten > ZAHL)
-    {
-        printf("Zu gross");
-    }
-
     return 0;
 }
