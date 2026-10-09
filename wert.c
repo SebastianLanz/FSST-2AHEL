@@ -2,17 +2,17 @@
 
 int main(void)
 {
-    int a = 1;
     int raten;
     int ZAHL = 33;
-    while (a == 1)
+    
+    for (int i = 0; i < 10; i++ )
     {
         printf("Errate meine Zahl: ");
         scanf("%d", &raten);
         if (raten == ZAHL)
         {
             printf("Du hast meine Zahl erraten\n");
-            a = 0;
+            i = 10;
         }
         if (raten < ZAHL)
         {
