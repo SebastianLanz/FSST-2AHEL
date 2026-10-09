@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
     int raten;
-    int ZAHL = 33;
+    int ZAHL = rand();
     
     for (int i = 0; i < 10; i++ )
     {
