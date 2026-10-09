@@ -2,25 +2,21 @@
 
 int main(void)
 {
-    printf("S1 ist : ");
-    int s1;
-    scanf("%d", &s1);
-    
-    printf("S2 ist : ");
-    int s2;
-    scanf("%d", &s2);
-
-    printf("S3 ist : ");
-    int s3;
-    scanf("%d", &s3);
-     
-    if ((s1 || s2) && s3 == 1)
+    int raten;
+    int ZAHL = 33;
+    printf("Errate meine Zahl: ");
+    scanf("%d", &raten);
+    if (raten == ZAHL)
     {
-        printf("Strom");
-    }    
-    else 
+        printf("Du hast meine Zahl erraten");
+    }
+    if (raten < ZAHL)
     {
-        printf("kein Strom");
+        printf("Zu klein");
+    }
+    if (raten > ZAHL)
+    {
+        printf("Zu gross");
     }
 
     return 0;
