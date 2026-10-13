@@ -13,7 +13,11 @@ int main(void)
     {
         printf("Errate meine Zahl: ");
         scanf("%d", &raten);
-        
+
+        if (raten == -1)
+        {
+            printf("CHEATER !!!\nDie Zahl die du erraten willst ist %d\n", ZAHL);
+        }
         if (raten > ZAHL)
         {
             printf("Zu gross\n");
@@ -29,7 +33,7 @@ int main(void)
         }
         else 
         {
-            printf("Dieser Fall kann nicht passieren %d %d", raten, ZAHL);
+            printf("Dieser Fall kann nicht passieren %d, %d", raten, ZAHL);
         }
     }
     return 0;
