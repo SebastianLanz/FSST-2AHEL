@@ -4,12 +4,16 @@
 
 int main(void)
 {
-    srand(time(NULL)); // Der Seed des Zufallsgenarator wird bei jedem start des Programmes verändert 
+    // Der Seed des Zufallsgenarator wird bei jedem start des Programmes verändert 
+    srand(time(NULL));
 
     int raten;
-    int ZAHL = rand() % 10; // Eine zufällige Zahl wird generiert und durch % 10 ist es eine Zahl von 0 bis 9
-    
-    for (int i = 0; i < 10; i++ ) // Schleife für 10 Versuche
+
+    // Eine zufällige Zahl wird generiert und durch % 10 ist es eine Zahl von 0 bis 9
+    int ZAHL = rand() % 100;
+
+    // Schleife für 10 Versuche
+    for (int i = 0; i < 10; i++ )
     {
         printf("Errate meine Zahl: ");
         scanf("%d", &raten);
@@ -18,7 +22,7 @@ int main(void)
         {
             printf("CHEATER !!!\nDie Zahl die du erraten willst ist %d\n", ZAHL);
         }
-        if (raten > ZAHL)
+        else if (raten > ZAHL)
         {
             printf("Zu gross\n");
         }
