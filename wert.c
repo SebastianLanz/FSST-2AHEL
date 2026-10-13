@@ -10,18 +10,23 @@ int main(void)
     {
         printf("Errate meine Zahl: ");
         scanf("%d", &raten);
+        
         if (raten == ZAHL)
         {
             printf("Du hast meine Zahl erraten\n");
             i = 10;
         }
-        if (raten < ZAHL)
+        else if (raten < ZAHL)
         {
             printf("Zu klein\n");
         }
-        if (raten > ZAHL)
+        else if (raten > ZAHL)
         {
             printf("Zu gross\n");
+        }
+        else 
+        {
+            printf("Dieser Fall kann nicht passieren %d %d", raten, ZAHL);
         }
     }
     return 0;
