@@ -4,25 +4,25 @@
 int main(void)
 {
     int raten;
-    int ZAHL = rand() % 7 + 1;
+    int ZAHL = rand() % 10 + 1;
     
     for (int i = 0; i < 10; i++ )
     {
         printf("Errate meine Zahl: ");
         scanf("%d", &raten);
         
-        if (raten == ZAHL)
+        if (raten > ZAHL)
         {
-            printf("Du hast meine Zahl erraten\n");
-            i = 10;
+            printf("Zu gross\n");
         }
         else if (raten < ZAHL)
         {
             printf("Zu klein\n");
         }
-        else if (raten > ZAHL)
+        else if (raten == ZAHL)
         {
-            printf("Zu gross\n");
+            printf("Du hast meine Zahl erraten\n");
+            i = 10;
         }
         else 
         {
