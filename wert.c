@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(void)
 {
+    srand(time(NULL)); //Der Seed des Zufallsgenarator wird bei jedem start des Programm verändert 
+
     int raten;
-    int ZAHL = rand() % 10 + 1;
+    int ZAHL = rand() % 10;
     
     for (int i = 0; i < 10; i++ )
     {
