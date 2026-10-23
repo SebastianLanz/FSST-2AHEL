@@ -2,16 +2,20 @@
 
 int main()
 {
+    // Variablen
     const char secret[] = "MONSTER4EVER";
     const int len = sizeof(secret) - 1;
     char guessed[len];
     char guess;
-
+    int hits = 0;
+    
+    // Variable initialisieren
     for (int i =  0; i < len; i ++)
     {
         guessed[i] = '_';
     }
 
+    // Abfrage
     printf("Buchstabe: ");
     if (scanf(" %c", &guess) != 1)
     {
@@ -19,7 +23,7 @@ int main()
         return 1;
     }
     
-    int hits = 0;
+    // Vergleich
     for (int i = 0; i < len; i++)
     {
         if (secret[i] == guess)
@@ -29,6 +33,7 @@ int main()
         }
     }
 
+    // Ausgabe
     for (int i = 0; i < len; i++)
     {
         printf("%c ", guessed[i]);
