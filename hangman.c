@@ -3,7 +3,14 @@
 int main()
 {
     const char secret[] = "MONSTER4EVER";
+    const int len = sizeof(secret) - 1;
+    char guessed[len];
     char guess;
+
+    for (int i =  0; i < len; i ++)
+    {
+        guessed[i] = '_';
+    }
 
     printf("Buchstabe: ");
     if (scanf(" %c", &guess) != 1)
@@ -13,15 +20,20 @@ int main()
     }
     
     int hits = 0;
-    for (int i = 0; i < sizeof(secret); i++)
+    for (int i = 0; i < len; i++)
     {
-        if ((secret[i]) == guess)
+        if (secret[i] == guess)
         {
             hits++;
+            guessed[i] = guess;
         }
     }
 
-    printf("Treffer: %d", hits);
+    for (int i = 0; i < len; i++)
+    {
+        printf("%c ", guessed[i]);
+    }
 
+    printf("\nTreffer: %d", hits);
     return 0;
 }
