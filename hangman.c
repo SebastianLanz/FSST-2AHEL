@@ -1,13 +1,27 @@
 #include <stdio.h>
 
+int countHits(const char secret[], const char guess, char guessed[], const int len)
+{
+    int hits = 0;
+    for (int i = 0; i < len; i++)
+    {
+        if (secret[i] == guess)
+        {
+            hits++;
+            guessed[i] = guess;
+        }
+    }
+
+    return hits;
+}
+
 int main()
 {
     // Variablen
     const char secret[] = "MONSTER4EVER";
     const int len = sizeof(secret) - 1;
     char guessed[len];
-    char guess;
-    int hits = 0;
+    const char guess;
     
     // Variable initialisieren
     for (int i =  0; i < len; i ++)
@@ -24,14 +38,7 @@ int main()
     }
     
     // Vergleich
-    for (int i = 0; i < len; i++)
-    {
-        if (secret[i] == guess)
-        {
-            hits++;
-            guessed[i] = guess;
-        }
-    }
+    countHits(secret, guess, guessed, len);
 
     // Ausgabe
     for (int i = 0; i < len; i++)
