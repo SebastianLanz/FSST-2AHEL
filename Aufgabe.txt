@@ -1,65 +1,25 @@
-Prompt: Kundenauftrag für ein C-Programmierprojekt
+1. Ausgangssituation
+Hallo! Ich backe wahnsinnig gerne sonntags Kuchen und Plätzchen für meine Familie und Freunde. Oft stehe ich allerdings vor dem Problem, dass ein Rezept genau für 4 Personen ausgelegt ist, ich aber plötzlich für 6 oder vielleicht sogar 10 Personen backen möchte. Das Umrechnen im Kopf klappt meistens nicht so gut und führt oft zu Chaos in der Küche.
 
-Du bist ein Kunde, der eine kleine Softwarelösung benötigt und mich als C-Programmierer damit beauftragt.
+2. Dein Anliegen
+Ich hätte gerne ein kleines Programm, das mir dabei hilft, die Mengenangaben für ein bestimmtes Grundrezept automatisch an eine beliebige Anzahl von Personen anzupassen, damit ich nicht jedes Mal selbst den Taschenrechner zücken muss.
 
+3. Gewünschte Funktionen
+Das Programm soll die Grundmenge einer Zutat (z. B. Mehl in Gramm für 4 Personen) verarbeiten können.
 
-Meine Programmierkenntnisse
+Es soll berücksichtigen, für wie viele Personen das Rezept ursprünglich gedacht war.
 
-Ich beherrsche folgende Grundlagen der Programmiersprache C:
+Es soll die gewünschte neue Personenzahl berücksichtigen.
 
+Zum Schluss soll mir das Programm die exakt neue Menge der Zutat ausgeben.
 
-Variablen und Datentypen
-Schleifen (for, while, do-while)
-Verzweigungen (if, else, switch)
-Funktionen und Rückgabewerte (return)
-Pointer (Grundlagen)
-Kommandozeilenargumente (argc, argv)
+4. Bedienung
+Es wäre super, wenn man das Programm einfach starten und die notwendigen Werte (wie die ursprüngliche Menge, die alte Personenzahl und die neue Personenzahl) direkt übergeben kann. Das Ergebnis soll dann einfach lesbar auf dem Bildschirm ausgegeben werden.
 
-Ich bin Anfänger und möchte meine Fähigkeiten durch praxisnahe Projekte verbessern.
+5. Beispiel
+Wenn mein Grundrezept für 4 Personen zum Beispiel 200 Gramm Mehl vorsieht und ich das Ganze für 10 Personen backen möchte, soll das Programm mir ausrechnen und anzeigen, wie viel Gramm Mehl ich jetzt brauche (nämlich 500 Gramm).
 
+6. Besondere Wünsche
+Es wäre nett, wenn das Programm eine kleine Meldung ausgibt, falls man eine unsinnige Personenzahl (wie 0 oder negative Zahlen) eingibt, damit keine falschen Berechnungen entstehen.
 
-Deine Aufgabe
-
-Erstelle einen realistischen Softwareauftrag aus der Perspektive eines Kunden.
-
-
-Wichtig:
-
-
-Du bist ein Kunde ohne Programmierkenntnisse.
-Du hast keine Ahnung, wie Software intern funktioniert.
-Du formulierst ausschließlich, WAS die Software können soll, nicht WIE sie programmiert werden soll.
-Verwende eine natürliche, verständliche Alltagssprache.
-Vermeide technische Begriffe und konkrete Programmiervorgaben.
-Die Anforderungen sollen realistisch und nachvollziehbar sein.
-Der Auftrag muss mit meinen oben genannten C-Kenntnissen lösbar sein.
-Das fertige Programm sollte ungefähr 20–40 Lines of Code (LoC) umfassen.
-Es dürfen keine fortgeschrittenen Konzepte wie Structs, dynamische Speicherverwaltung, Dateien, externe Bibliotheken oder komplexe Datenstrukturen erforderlich sein.
-
-Aufbau des Kundenauftrags
-
-Ausgangssituation: Beschreibe kurz, warum du die Software benötigst.
-Dein Anliegen: Erkläre, welches Problem die Software lösen soll.
-Gewünschte Funktionen: Beschreibe konkret, was die Software können muss.
-Bedienung: Erkläre, welche Informationen der Benutzer eingeben können soll und welche Ergebnisse er erwartet.
-Beispiel: Gib ein realistisches Beispiel für eine typische Nutzung.
-Besondere Wünsche: Nenne gegebenenfalls kleinere Zusatzanforderungen.
-
-Regeln
-
-Gib mir ausschließlich den Kundenauftrag.
-Verrate mir nicht, wie ich das Programm implementieren soll.
-Gib keine Codebeispiele oder Lösungshinweise.
-Zerlege die Aufgabe nicht in einzelne Programmierschritte.
-Verrate nicht, welche C-Konzepte ich verwenden soll.
-Gib keine Musterlösung und keinen Pseudocode aus.
-Stelle keine übertrieben komplizierten Anforderungen.
-Achte darauf, dass die Anforderungen eindeutig genug sind, damit ich selbstständig eine Lösung entwickeln kann.
-
-Schwierigkeitsgrad
-
-Wähle eine Aufgabe, die mich fordert, aber nicht überfordert. Die Umsetzung soll mit meinen aktuellen Kenntnissen möglich sein und ungefähr 20–40 LoC benötigen.
-
-
-Wichtig: Gib mir bei jeder neuen Anfrage eine andere Aufgabenstellung aus einem möglichst abwechslungsreichen Themenbereich (z. B. Alltag, Haushalt, Sport, Büro, Freizeit, kleine Geschäfte oder persönliche Organisation).
-
+Vielen Dank im Voraus für deine Hilfe bei meinem kleinen Küchenhelfer!
