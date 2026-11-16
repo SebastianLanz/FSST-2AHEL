@@ -1,4 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+float umrechnen(float menge1, float palt1, float pneu1)
+{
+    float mengeneu = (pneu1/palt1)*menge1;
+    return mengeneu;
+}
 
 int main(int argc, char* argv[])
 {
@@ -11,7 +18,10 @@ int main(int argc, char* argv[])
         char *menge = argv[1];
         char *palt = argv[2];
         char *pneu = argv[3];
-        printf("Fuer %d Personen: %d -> fuer %d Personen: %d", palt, menge, pneu, umrechnen(menge, palt, pneu));
+        float menge1 = atof(menge);
+        float palt1 = atof(palt);
+        float pneu1 = atof(pneu);
+        printf("Fuer %.2f Personen: %.2f -> fuer %.2f Personen: %.2f", palt1, menge1, pneu1, umrechnen(menge1, palt1, pneu1));
     }
     else
     {
