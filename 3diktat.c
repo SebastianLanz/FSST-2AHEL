@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 // scope = Gültigkeitsbereich einer Variable
 int strlen(char* wort) {
     int sz = 0;
@@ -15,19 +16,20 @@ void dump(char* wort) {
 }
 
 char* init(int sz, char c) {
-    char wort[sz];
+    char* wort = malloc(sz + 1);
     for (int i = 0; i < sz; i++) {
         wort[i] = c;
     }
+    wort[sz] = '\0';
     return wort;
 }
 
 int main()
 {
     char* wort = "WORT";
-    char* wort2 = init(strlen(wort), '_');
+    char* wort2 = init(strlen(wort), 'A');
 
-    dump(wort);
+    dump(wort2);
 
     return 0;
 }
