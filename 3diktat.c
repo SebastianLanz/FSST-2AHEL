@@ -30,6 +30,7 @@ int main()
     char* wort2 = init(strlen(wort), 'A');
 
     dump(wort2);
-
+    free(wort2);
+    
     return 0;
 }
